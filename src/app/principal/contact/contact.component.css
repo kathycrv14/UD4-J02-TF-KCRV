@@ -1,0 +1,84 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    background-image: url('/assets/fondo9.jpg');
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionTotal{
+    width: 50%;
+    height: 50%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.sectionFormAndTitle{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    background-image: url('/assets/fondo10.jpg');
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionForm{
+    width: 80%;
+}
+
+@media (max-width:992px){
+    .sectionTotal{
+        width: 70%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .sectionForm{
+        width: 70%;
+    }
+}
+
+h2{
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight:bolder;
+    font-size: 2em;
+    color: rgb(56, 77, 147);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 1rem;
+}
+
+mat-form-field{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+.sectionButton{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.button{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(51, 161, 245), rgb(47, 255, 0));
+    height: 3rem;
+    color: rgb(0, 0, 0);
+    border-radius: none ;
+}

@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "./dist/UD4-J02-TF-KCRV",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

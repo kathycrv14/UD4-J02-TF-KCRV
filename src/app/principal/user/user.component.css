@@ -1,0 +1,77 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    background-image: url('/assets/fondo13.jpg');
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionTable{
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+table{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+
+th{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    width: 2rem;
+    background-color: rgb(162, 229, 131);
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+tr:hover{
+    background-color: rgb(91, 113, 173);
+    color: white;
+}
+
+
+
+thead{
+    border-top-left-radius: 2rem;
+}
+
+td{
+    border-bottom: 1px solid black;
+    width: 2rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sectionGeneral{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex: wrap;
+    }    
+    .sectionTable{
+        overflow-x: scroll;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}

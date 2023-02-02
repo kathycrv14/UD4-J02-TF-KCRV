@@ -1,0 +1,122 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    background-image: url('/assets/fondo3.jpg');
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionTotal{
+    width: 70%;
+    height: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.sectionImagenLogin{
+    background-image: url('/assets/fondo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.sectionFormAndTitle{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sectionForm{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+}
+
+.sectionMat{
+    margin-top: 2rem;
+    margin-bottom: none;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+@media (max-width:992px){
+    .sectionImagenLogin{
+        display: none;
+    }
+
+    .sectionFormAndTitle{
+        background-image: url('/assets/fondo3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width:992px){
+    .sectionImagenLogin{
+        display: block;
+        background-image: url('/assets/fondo3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+
+    .sectionFormAndTitle{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex: wrap;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight:bolder;
+    font-size: 2em;
+    color: rgb(89, 41, 113);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.sectionImagen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+img{
+    width: 8rem;
+}
+
+.sectionButton{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(168, 51, 245), rgb(0, 149, 255));
+    height: 3rem;
+    color: rgb(186, 240, 255);
+    border-radius: none ;
+}

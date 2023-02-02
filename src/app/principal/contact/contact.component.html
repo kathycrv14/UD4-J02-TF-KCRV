@@ -1,0 +1,72 @@
+<section class="sectionGeneral">
+    <section class="sectionTotal row">
+
+        <!--  -->
+        <section class="sectionFormAndTitle col-12 col-lg-12">
+            <section class="sectionForm">
+
+                <!-- Titulo -->
+                <h2 class="">form's contact</h2>
+            <form [formGroup]="registroForm">
+                <!-- Nombre -->
+                <section class="sectionMat">
+                    <mat-form-field class="example-form-field">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput  type="text" id="nombre" formControlName="nombre">
+                        <button matSuffix mat-icon-button aria-label="Clear" type="text" id="nombre">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </mat-form-field>
+                        <!-- Nombre Validacion -->       
+                        <section *ngIf="nombre?.invalid && (nombre?.dirty || nombre?.touched)">
+                            <section *ngIf="nombre?.errors?.['required']" class="alert alert-danger">
+                                El nombre es obligatorio
+                            </section>
+                            <section *ngIf="nombre?.errors?.['pattern']" class="alert alert-danger">
+                                El nombre ingresado debe ser letras no números
+                            </section>
+                        </section>     
+                </section>
+
+                <!-- Email -->
+                <section class="sectionMat">
+                    <mat-form-field class="example-form-field">
+                        <mat-label>Email</mat-label>
+                        <input matInput  type="email" id="email" formControlName="email">
+                        <button matSuffix mat-icon-button aria-label="Clear" type="text" id="email">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </mat-form-field>
+                        <!-- Email Validacion -->    
+                        <section *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+                            <section *ngIf="email?.errors?.['required']" class="alert alert-danger">
+                                El email es obligatorio
+                            </section>
+                            <section *ngIf="email?.hasError('validEmail')" class="alert alert-danger">
+                                El email invalido
+                            </section>
+                        </section>             
+                </section>
+
+                <!-- Mensaje -->
+                <section class="sectionMat">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Mensaje</mat-label>
+                        <textarea matInput formControlName="mensaje" ></textarea>
+                    </mat-form-field>
+                        <!-- Mensaje Validacion -->
+                </section>
+                <section *ngIf="mensaje?.invalid && (mensaje?.dirty || mensaje?.touched)">
+                    <section *ngIf="mensaje?.errors?.['required']" class="alert alert-danger">
+                        El mensaje es obligatorio
+                    </section>
+                </section>     
+            </form>
+
+                <!-- Button -->
+                <section class="sectionButton">
+                    <button class="button" mat-raised-button color="primary" type="button" (click)="enviar()" [disabled]="!registroForm.valid" >Enviar</button>
+                </section>                  
+            </section>
+        </section>        
+    </section>
